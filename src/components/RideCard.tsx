@@ -85,11 +85,9 @@ const RideCard = ({ ride }: { ride: RideProps }) => {
       
       <CardFooter className="bg-gray-800 p-4">
         <div className="w-full flex flex-col sm:flex-row gap-2">
-          <Link to={`/rides/${ride.id}`} className="w-full sm:w-auto">
-            <Button variant="outline" className="w-full border-purple-500/50 text-purple-200 hover:bg-purple-500/20">
-              View Details
-            </Button>
-          </Link>
+          <Button variant="outline" className="w-full border-purple-500/50 text-purple-200 hover:bg-purple-500/20">
+            View Details
+          </Button>
           <Link to={`/book/${ride.id}`} className="w-full sm:w-auto sm:ml-auto">
             <Button className="w-full bg-purple-600 hover:bg-purple-700">
               Book Seat

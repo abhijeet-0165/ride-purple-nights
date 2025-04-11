@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -9,6 +8,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Calendar, Car, Clock, CreditCard, MapPin, BarChart, BookOpen, User, LogOut, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ChitkaraMap from '@/components/ChitkaraMap';
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
 const StudentDashboard = () => {
   // Mock student data

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Menu, X, Car } from "lucide-react";
+import { Menu, X, Car, GraduationCap } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,6 +33,10 @@ const Navbar = () => {
               </Link>
               <Link to="/rides" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Find Rides
+              </Link>
+              <Link to="/student-login" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                <GraduationCap className="h-4 w-4 mr-1" />
+                Student Portal
               </Link>
               <Link to="/login" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Log in
@@ -84,6 +88,14 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Find Rides
+            </Link>
+            <Link 
+              to="/student-login" 
+              className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium flex items-center"
+              onClick={toggleMenu}
+            >
+              <GraduationCap className="h-4 w-4 mr-1" />
+              Student Portal
             </Link>
             <Link 
               to="/login" 

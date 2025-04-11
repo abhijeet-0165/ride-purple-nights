@@ -12,6 +12,10 @@ import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import BookRide from "./pages/BookRide";
+import StudentLogin from "./pages/StudentLogin";
+import StudentSignup from "./pages/StudentSignup";
+import StudentDashboard from "./pages/StudentDashboard";
+import OfferRide from "./pages/OfferRide";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +33,13 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
           <Route path="/book/:rideId" element={<BookRide />} />
+          
+          {/* Student portal routes */}
+          <Route path="/student-login" element={<StudentLogin />} />
+          <Route path="/student-signup" element={<StudentSignup />} />
+          <Route path="/student-dashboard" element={<StudentDashboard />} />
+          <Route path="/offer-ride" element={<OfferRide />} />
+          
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
